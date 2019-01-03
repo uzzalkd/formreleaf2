@@ -31,7 +31,7 @@ public class Login {
 	public String actual = null;
 	public String expectedValidationMsg = null;
 
-	@Test (priority = 1, description = "Check validation message when submitting blank username password")
+	//@Test (priority = 1, description = "Check validation message when submitting blank username password")
 	public void checkValidationMsgWhenBlankSubmit() {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Home_Page.LoginBtn(driver).click();
